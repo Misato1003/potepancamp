@@ -1,0 +1,320 @@
+@charset "UTF-8";
+
+/*ヘッダーの所*/
+
+.header{
+  display: block;
+}
+
+.Header{
+  width: 100%;
+  position: absolute; /*ヘッダーの絶対的な位置*/
+}
+
+.Header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Header{
+  background-color: #ffffff;/*白色*/
+  z-index: 10;
+}
+
+.header-item{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 36px 0 36px;
+  max-width: 100%;
+  position: relative;
+}
+
+.header-logo{
+  justify-content: space-between;
+  margin: 0 36px 0 36px;
+  position: relative;
+}
+
+.Header{
+  display: block;
+  height: 20px;
+  width: auto;
+}
+
+.main-nav{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav{
+  color: #000000; /*黒*/
+  text-decoration: none;
+}
+
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 36px 0 36px;
+  max-width: 100px;
+  position: relative;
+}
+  
+
+.item{
+  display: flex;
+  flex-direction: row; 
+  list-style: none;
+}
+
+.item{
+  transition: opacity 0.2s;
+}
+
+.item{
+  margin-right: 45px;
+}
+
+.item:last-of-type {
+    margin-right: 0;
+}
+
+.item-button{
+  transition: opacity 0.2s;
+}
+
+.item-button{
+  align-items: center;
+  background-color: #ffa500; /*オレンジ*/
+  border: none;
+  border-radius: 38px;
+  color: #ffffff; /*白*/
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  height: 40px;
+  padding: 0 20px;
+}
+
+ /*メインの部分*/
+
+.main{
+  font-size: 25px;
+  line-height: 36px;
+}
+
+.main{
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+/*３つの画像（１００％、No.1、返金）+ボタン*/
+
+.img-main{
+  margin-bottom: 25px;
+}
+
+.img-main img{
+  margin-right: 8px;
+}
+
+.img-main img:nth-of-type(2) {
+    width: 40%;
+}
+
+.img-main img:last-of-type {
+    margin-right: 0;
+}
+  
+.img{
+  border:0;
+  vertical-align: middle;
+}
+
+.button{
+  display: flex;
+}
+
+.button a:first-of-type {
+  margin-right: 15px;
+  width: 306px;
+}
+
+.button a{
+  transition: opacity 0.2s;
+}
+
+.button a{
+  align-items: center;
+  background-color: #ffa500; /*オレンジ*/
+  border: none;
+  border-radius: 38px;
+  color: #ffffff; /*白色*/
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  height: 64px;
+}
+
+.button a:last-of-type{
+  background-color: #ffffff; /*白色*/
+  border: 1px solid #E0E0E0;
+  color: #000000;
+  width: 176px;
+}
+
+.title-main{
+  margin-bottom: 70px;
+  width: fit-content;
+}
+
+.coment{
+  color: #A2A2A4;
+  font-size: 12px;
+  list-style-type: none !important;
+}
+
+.main-title{
+  color: #000000; /*黒*/
+  font-family: sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 54px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/*ポテパンとは+コメント書き*/
+
+.potepan{
+  background-color: #F79214; /*背景の色 （オレンジ）*/
+  padding: 45px 0;
+}
+
+.potepan{
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+  width: 53%;
+}
+
+.title-main{
+  color: #ffffff; /*白色*/
+  text-align: left;
+  font-size: 40px;
+}
+
+.main-1{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 15px;
+}
+
+.main-1{
+  color: #ffffff; /*白色*/
+  text-align: left;
+}
+
+/*学習内容のボタン*/
+
+.content-button{
+  width: 250px; 
+}
+
+.content-button a{
+  transition: opacity 0.2s;
+}
+
+.content-button a{
+  align-items: center;
+  border: none;
+  border-radius: 38px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  height: 64px;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  color: #ffa500!important;
+  background-color: #ffffff;
+}
+
+.item{
+  display: inline; /*横になる*/
+}
+
+.main-nav{
+  color: #000000;
+}
+
+/*学習姿の画像*/
+
+.box{
+ background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg)
+ background-size: cover;
+ background-position: center;
+ padding-top: 100px;
+ padding-bottom: 28px;
+ word-break: break-all;
+ box-sizing: border-box;
+}
+
+
+
+.FirstView_main-image{
+  width: 100%;  
+}
+
+.img{
+  border: 0px;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  box-sizing: border-box;
+}
+
+.FirstView {
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 28px;
+}
+
+
