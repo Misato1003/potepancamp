@@ -1,14 +1,25 @@
 @charset "UTF-8";
 
+/*bodyの設定*/
+
+.page-top{
+  color: #000;/*黒*/
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+
 /*ヘッダーの所*/
 
 .header{
-  display: block;
+  display: block;/*ブロック要素にする*/
 }
 
 .Header{
-  width: 100%;
-  position: absolute; /*ヘッダーの絶対的な位置*/
+  width: 100%; /*幅*/
+  position: absolute; /*絶対的な位置*/
+  z-index: 100;
 }
 
 .Header{
@@ -16,42 +27,59 @@
   padding-bottom: 20px;
 }
 
-.Header{
-  background-color: #ffffff;/*白色*/
-  z-index: 10;
-}
-
 .header-item{
   display: flex;
   justify-content: space-between;
-  margin: 0 36px 0 36px;
+  margin: 0 36px 0 36px;/*余白　上　右　下　左*/
   max-width: 100%;
-  position: relative;
+  position: relative;/*相対配置*/
 }
 
-.header-logo{
+.header{
   justify-content: space-between;
   margin: 0 36px 0 36px;
   position: relative;
 }
 
-.Header{
+.header-logo-sp{
   display: block;
   height: 20px;
   width: auto;
 }
 
-.main-nav{
-  align-items: center;
+.nav-item{
+  align-items: center; 
   display: flex;
   justify-content: space-between;
 }
 
 .main-nav{
   color: #000000; /*黒*/
-  text-decoration: none;
+  text-decoration: none; 
 }
 
+.item-nav{
+ display: block;
+}
+
+.item-nav{
+ color: #000;/*黒*/
+ text-decoration: none;
+}
+
+.item-nav>span:first-child{
+ font-family: 'Lato', sans-serif;
+}
+
+.item-nav>span:last-child{
+  font-size: 10;
+}
+
+.item-nav>span{
+ display: block;
+ font-weight: 700;
+ text-align: center;
+}
 
 .item{
   display: flex;
@@ -72,12 +100,8 @@
   transition: opacity 0.2s;
 }
 
-.item{
-  margin-right: 45px;
-}
-
 .item:last-of-type {
-    margin-right: 0;
+    margin-right: 10;
 }
 
 .item-button{
@@ -98,26 +122,60 @@
   text-decoration: none;
   text-align: center;
   width: 100%;
-  font-size: 12px;
+  font-size: 10px;
   height: 40px;
   padding: 0 20px;
 }
 
- /*メインの部分*/
-
-.main{
-  font-size: 25px;
-  line-height: 36px;
+ /*無料カウンセリングのHaver*/
+ 
+.item-button:hover{
+  background-color: #00bfff;/*水色*/
 }
 
-.main{
-  max-width: 1140px;
-  padding-left: 50px;
-  padding-right: 50px;
+/*学習姿の画像*/
+
+.FirstView_main-image{
+  width: 100%;  
+}
+
+.img{
+  border: 0px;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+  box-sizing: border-box;
+}
+
+.FirstView-main{
+  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 28px;
+}
+
+.FirstView_main-image--sp{
+  display: none;
+}
+
+
+
+ /*メインの部分*/
+
+.FirstView-main{
+  font-size: 25px;
+}
+
+.FirstView-main{
+  padding-left: 200px;
+  padding-right: 200px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
+
 
 /*３つの画像（１００％、No.1、返金）+ボタン*/
 
@@ -137,7 +195,7 @@
     margin-right: 0;
 }
   
-.img{
+.img-main img{
   border:0;
   vertical-align: middle;
 }
@@ -180,6 +238,10 @@
   width: 176px;
 }
 
+.button a:hover{ /*カウンセリング、資料請求のボタン　Haver*/
+  background-color: #00bfff;/*水色*/
+}
+
 .title-main{
   margin-bottom: 70px;
   width: fit-content;
@@ -203,7 +265,8 @@
 
 /*ポテパンとは+コメント書き*/
 
-.potepan{
+.potepan-page{
+  padding: 110px 0;
   background-color: #F79214; /*背景の色 （オレンジ）*/
   padding: 45px 0;
 }
@@ -220,6 +283,26 @@
   justify-content: space-between;
 }
 
+.title h1{
+  font-size: 40px;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.title h1{
+  font-weight: 700;
+}
+
+.title h1>span{
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+
+.title br{
+  display: none;
+}
+
 .title{
   display: flex;
   flex-direction: column;
@@ -228,7 +311,7 @@
   width: 53%;
 }
 
-.title-main{
+.title-page{
   color: #ffffff; /*白色*/
   text-align: left;
   font-size: 40px;
@@ -274,47 +357,22 @@
   background-color: #ffffff;
 }
 
+
+
+.content-button a:hover{ /*学習内容のボタンのHaver*/
+  background-color: #00bfff;/*水色*/
+}
+
 .item{
   display: inline; /*横になる*/
 }
 
-.main-nav{
-  color: #000000;
-}
-
-/*学習姿の画像*/
-
-.box{
- background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero-sp.jpg)
- background-size: cover;
- background-position: center;
- padding-top: 100px;
- padding-bottom: 28px;
- word-break: break-all;
- box-sizing: border-box;
+.nav-item{
+  color: #000000;/*黒色*/
 }
 
 
 
-.FirstView_main-image{
-  width: 100%;  
-}
 
-.img{
-  border: 0px;
-  vertical-align: middle;
-  margin: 0;
-  padding: 0;
-  word-break: break-all;
-  box-sizing: border-box;
-}
-
-.FirstView {
-  background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
-  background-size: cover;
-  background-position: center;
-  padding-top: 100px;
-  padding-bottom: 28px;
-}
 
 
